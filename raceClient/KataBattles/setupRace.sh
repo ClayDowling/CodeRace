@@ -1,5 +1,7 @@
 #!/bin/bash
 
+CLIENTPATH=`dirname ${BASH_SRC[0]}`
+
 RACER=$RACER_NAME
 if [[ -z "$RACER" ]];
 then
@@ -19,10 +21,10 @@ fi
 KATA=$1
 
 # Cleanup
-${PWD}/cleanup.sh
+${CLIENTPATH}/cleanup.sh
 
 # start up the race.sh for the new kata
-cd ${PWD}/$KATA
+cd ${CLIENTPATH}/$KATA
 TIMESTAMP=`date "+%y%m%d%H%M%S"`
 ./race.sh $RACER > race-${TIMESTAMP}.log 2>&1 &
 
