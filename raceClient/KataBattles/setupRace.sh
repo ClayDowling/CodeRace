@@ -1,13 +1,13 @@
 #!/bin/bash
 
-CLIENTPATH=`dirname ${BASH_SRC[0]}`
+CLIENTPATH=`dirname ${BASH_SOURCE[0]}`
 
 RACER=$RACER_NAME
 if [[ -z "$RACER" ]];
 then
   echo "Unable to find racer name in environment variable RACER_NAME";
   exit 1;
-fi 
+fi
 
 echo "Racer from env: $RACER"
 echo "arg count $#"
@@ -27,5 +27,3 @@ ${CLIENTPATH}/cleanup.sh
 cd ${CLIENTPATH}/$KATA
 TIMESTAMP=`date "+%y%m%d%H%M%S"`
 ./race.sh $RACER > race-${TIMESTAMP}.log 2>&1 &
-
-
