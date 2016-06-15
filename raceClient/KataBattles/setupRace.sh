@@ -22,7 +22,7 @@ KATA=$1
 ${PWD}/cleanup.sh
 
 # start up the race.sh for the new kata
-cd $KATA
+cd ${PWD}/$KATA
 TIMESTAMP=`date "+%y%m%d%H%M%S"`
 ./race.sh $RACER > race-${TIMESTAMP}.log 2>&1 &
 
