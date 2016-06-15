@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 npm start &
 npm test
