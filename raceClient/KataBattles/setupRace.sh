@@ -19,7 +19,7 @@ fi
 KATA=$1
 
 # Cleanup
-./cleanup.sh
+${PWD}/cleanup.sh
 
 # start up the race.sh for the new kata
 cd $KATA
