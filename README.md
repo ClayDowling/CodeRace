@@ -17,12 +17,9 @@ npm install
 npm start
 ```
 
-Register all of the users with appropriate names at the /signup page on
-your server.  Names are of the form
-racer1, racer2, etc.  The Display name should be chosen as appropriate
-for the event.
+Then, browse to [http://localhost:8081/signup]() to set up the
+usernames, emails, etc.  Usernames are of the form racer1, racer2, etc.
 
-Then, browse to [http://localhost:8081/signup]() to set up the usernames, emails, etc.
 
 ## Setting Up The Clients
 
@@ -30,11 +27,11 @@ Then, browse to [http://localhost:8081/signup]() to set up the usernames, emails
 
     sudo npm install -g karma-cli
 
-Create accounts on the client machines with no password.  "coderacer" is
+Create an account on the client machines with no password.  "coderacer" is
 a fine login.  On OSX, you will need to create the account with a
 password, then set the password to blank.
 
-Install nodejs (see node.js for details).
+Install nodejs (see [http://node.js]() for details).
 
 
 ### As the coderacer User
@@ -58,4 +55,5 @@ Clone this repo from the home directory of the coderacer account.
 Update the desktop with any branding imagery.
 
 Log out and log back in.  You should get an editor launched with two
-javascript files open.  Make a test pass and confirm that the 
+javascript files open.  Make a test pass and confirm that the server is
+properly updated.
