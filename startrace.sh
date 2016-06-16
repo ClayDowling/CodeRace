@@ -1,3 +1,9 @@
 cd ~/CodeRace; ${CODERACE}/setupRace.sh $KATA
 
-atom ${CODERACE}/${KATA} ${CODERACE}/${KATA}/src/RomanNumerals.js ${CODERACE}/${KATA}/spec/RomanNumeralsSpec.js
+if [ `uname` == "Darwin" ]; then
+	atom ${CODERACE}/${KATA} ${CODERACE}/${KATA}/src/RomanNumerals.js
+fi
+
+if [ `uname` == "Linux" ]; then
+	gedit ${CODERACE}/${KATA}/src/RomanNumerals.js
+fi
