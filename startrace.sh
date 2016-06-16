@@ -5,5 +5,5 @@ if [ `uname` == "Darwin" ]; then
 fi
 
 if [ `uname` == "Linux" ]; then
-	gedit ${CODERACE}/${KATA}/src/RomanNumerals.js
+	gedit ${CODERACE}/${KATA}/src/RomanNumerals.js &
 fi
