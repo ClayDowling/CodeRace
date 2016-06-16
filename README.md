@@ -43,10 +43,6 @@ In the .profile file, include the following:
     export RACECLIENT=~/CodeRace/raceClient
     export KATA=RomanNumeralsJS
 
-    . ~/CodeRace/startrace.sh
-
-    cd
-
 Clone this repo from the home directory of the coderacer account.
 
     cd ~/CodeRace
@@ -57,6 +53,10 @@ Update the desktop with any branding imagery.
 Log out and log back in.  You should get an editor launched with two
 javascript files open.  Make a test pass and confirm that the server is
 properly updated.
+
+    cd ~/Desktop
+    ln ~/CodeRace/startrace.sh "Start Race"
+    chmod 755 "Start Race"
 
 *Making Changes*  You must make all changes on the server repo that you
 cloned earlier, and push them up to github.  Then pull down the changes
