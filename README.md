@@ -57,3 +57,8 @@ Update the desktop with any branding imagery.
 Log out and log back in.  You should get an editor launched with two
 javascript files open.  Make a test pass and confirm that the server is
 properly updated.
+
+*Making Changes*  You must make all changes on the server repo that you
+cloned earlier, and push them up to github.  Then pull down the changes
+on the client.  The act of starting the race wipes out any local changes
+you may have made on the client.
