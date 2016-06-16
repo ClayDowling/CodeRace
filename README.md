@@ -1,7 +1,5 @@
 # Code Race
 
-[TODO: Add some more description]
-
 ## Running the server
 
 Fork this repo and clone the fork to the server.
@@ -13,6 +11,7 @@ instead of 127.0.0.1.
 
 
 ```sh
+cd CodeRace
 npm install
 npm start
 ```
@@ -23,6 +22,10 @@ usernames, emails, etc.  Usernames are of the form racer1, racer2, etc.
 
 ## Setting Up The Clients
 
+**Important** There must be an administrative user on the machine, and
+that user must have a password.  You will need to us sudo for some
+steps, and sudo requires a password.
+
 ### As a user with administrative priviledges:
 
     sudo npm install -g karma-cli
@@ -32,6 +35,14 @@ a fine login.  On OSX, you will need to create the account with a
 password, then set the password to blank.
 
 Install nodejs (see [http://node.js]() for details).
+
+Install git.  *Note:* git must be in the system path.  Verify this at a
+terminal by typing "which git"  If nothing is returned, find the git
+executable and create a link in /usr/local/bin:
+
+    ln full-path-to-git /usr/local/bin/git
+
+Install Atom.  Ensure that it can be opened without annoying messages.
 
 
 ### As the coderacer User
@@ -75,6 +86,13 @@ the launcher wizard.
 program needs a connected output stream to display any information from
 the startRace script, or display any error messages about launching the
 programs.
+
+If you have odd problems when opening gedit, such as a path like
+~/CodeRace/raceClient/~CodeRace....., modify `.profile` to use absolute
+paths instead of those starting with ~/CodeRace.  Some Linux
+distributions have an imitation bash shell which does not handle path
+expansion correctly in all cases (I'm looking at you, Linux Mint).
+
 
 ## Making Changes
 
