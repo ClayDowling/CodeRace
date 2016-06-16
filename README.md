@@ -50,15 +50,35 @@ Clone this repo from the home directory of the coderacer account.
 
 Update the desktop with any branding imagery.
 
-Log out and log back in.  You should get an editor launched with two
-javascript files open.  Make a test pass and confirm that the server is
-properly updated.
+#### On a Mac
 
     cd ~/Desktop
     ln ~/CodeRace/startrace.sh "Start Race"
     chmod 755 "Start Race"
 
-*Making Changes*  You must make all changes on the server repo that you
+#### On a Linux System
+
+Linux can't easily launch a shell script from a desktop launcher, so you
+will need to use an executable which has been created for launching
+katas.
+
+    cd
+    git clone https://github.com/ClayDowling/miniature-eureka
+    cd miniature-eureka
+    make
+
+Now from the desktop create a launcher.  For the executable use
+${HOME}/miniature-eureka/miniature-eureka, but via the browse button in
+the launcher wizard. 
+
+**IMPORTANT** You must set the launcher to open in a terminal.  The
+program needs a connected output stream to display any information from
+the startRace script, or display any error messages about launching the
+programs.
+
+## Making Changes
+
+You must make all changes on the server repo that you
 cloned earlier, and push them up to github.  Then pull down the changes
 on the client.  The act of starting the race wipes out any local changes
 you may have made on the client.
