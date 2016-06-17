@@ -30,12 +30,12 @@ var parseFile = function(fileName, stuff) {
     console.log(tokens);
     if (tokens.length > 9) {
       var number;
-      if(tokens[10] == 'SUCCESS'){
+      if(tokens[9] == 'SUCCESS)'){
         number = 100
       }
       else{
-        var denomenator = tokens[9] ;
-        var numerator = denomenator - tokens[10].slice(1);
+        var denomenator = 10 ;
+        var numerator = denomenator - tokens[8].slice(1);
         number = (numerator / denomenator) * 100;
       }
     setPercentage(Math.floor(number));
