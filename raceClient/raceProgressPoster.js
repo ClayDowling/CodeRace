@@ -27,6 +27,7 @@ var parseFile = function(fileName, stuff) {
     var lines = data.toString().trim().split('\n');
     var lastLine = lines.slice(-1)[0];
     var tokens = lastLine.split(" ");
+    console.log(tokens);
     if (tokens.length > 9) {
       var number;
       if(tokens[10] == 'SUCCESS'){
