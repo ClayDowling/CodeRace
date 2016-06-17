@@ -51,6 +51,8 @@ var setOptions = function() {
     port: 8081,
     method: 'PUT'
   };
+
+  console.log(options);
   http.request(options, callback).end();
 }
 
