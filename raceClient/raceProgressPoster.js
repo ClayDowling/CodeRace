@@ -20,7 +20,7 @@ if(racerNum == null) {
 }
 
 var parseFile = function(fileName, stuff) {
-  fs.readFile(fileName, function(err, data) {
+  fs.readFile(fileName, 'utf8', function(err, data) {
     if (err) {
       return console.error(err);
     }
